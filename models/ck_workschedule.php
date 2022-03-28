@@ -95,6 +95,7 @@ class WorkSchedule extends Database
                 }
             }
         } else {
+            $result = $this->ppic_Table($value, "ppic_workschedule");
             if ($result->num_rows > 0) {
                 $data = $this->query($result, $totalData);
             } else {
